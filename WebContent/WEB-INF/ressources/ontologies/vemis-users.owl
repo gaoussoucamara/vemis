@@ -1,0 +1,268 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.vemis.sn/6c/ontologies/2018/11/users"
+     xml:base="http://www.vemis.sn/6c/ontologies/2018/11/users"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:users="http://www.vemis.sn/6c/ontologies/2018/11/users#">
+    <owl:Ontology rdf:about="http://www.vemis.sn/6c/ontologies/2018/11/users"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.vemis.sn/6c/ontologies/2018/11/users#aPourLogin -->
+
+    <owl:ObjectProperty rdf:about="http://www.vemis.sn/6c/ontologies/2018/11/users#aPourLogin">
+        <rdfs:domain rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#Utilisateur"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vemis.sn/6c/ontologies/2018/11/users#aPourMotDePass -->
+
+    <owl:ObjectProperty rdf:about="http://www.vemis.sn/6c/ontologies/2018/11/users#aPourMotDePass">
+        <rdfs:domain rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#Utilisateur"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vemis.sn/6c/ontologies/2018/11/users#aPourNom -->
+
+    <owl:ObjectProperty rdf:about="http://www.vemis.sn/6c/ontologies/2018/11/users#aPourNom">
+        <rdfs:domain rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#Utilisateur"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vemis.sn/6c/ontologies/2018/11/users#aPourPrenom -->
+
+    <owl:ObjectProperty rdf:about="http://www.vemis.sn/6c/ontologies/2018/11/users#aPourPrenom">
+        <rdfs:domain rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#Utilisateur"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.vemis.sn/6c/ontologies/2018/11/users#Login -->
+
+    <owl:Class rdf:about="http://www.vemis.sn/6c/ontologies/2018/11/users#Login"/>
+    
+
+
+    <!-- http://www.vemis.sn/6c/ontologies/2018/11/users#MotDePass -->
+
+    <owl:Class rdf:about="http://www.vemis.sn/6c/ontologies/2018/11/users#MotDePass"/>
+    
+
+
+    <!-- http://www.vemis.sn/6c/ontologies/2018/11/users#Nom -->
+
+    <owl:Class rdf:about="http://www.vemis.sn/6c/ontologies/2018/11/users#Nom"/>
+    
+
+
+    <!-- http://www.vemis.sn/6c/ontologies/2018/11/users#Prenom -->
+
+    <owl:Class rdf:about="http://www.vemis.sn/6c/ontologies/2018/11/users#Prenom"/>
+    
+
+
+    <!-- http://www.vemis.sn/6c/ontologies/2018/11/users#Utilisateur -->
+
+    <owl:Class rdf:about="http://www.vemis.sn/6c/ontologies/2018/11/users#Utilisateur">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#aPourLogin"/>
+                <owl:allValuesFrom rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#Login"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#aPourMotDePass"/>
+                <owl:allValuesFrom rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#MotDePass"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#aPourNom"/>
+                <owl:allValuesFrom rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#Nom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#aPourPrenom"/>
+                <owl:allValuesFrom rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#Prenom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.vemis.sn/6c/ontologies/2018/11/users#CAMARA -->
+
+    <owl:NamedIndividual rdf:about="http://www.vemis.sn/6c/ontologies/2018/11/users#CAMARA">
+        <rdf:type rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#Nom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vemis.sn/6c/ontologies/2018/11/users#CISSE -->
+
+    <owl:NamedIndividual rdf:about="http://www.vemis.sn/6c/ontologies/2018/11/users#CISSE">
+        <rdf:type rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#Nom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vemis.sn/6c/ontologies/2018/11/users#DEMBELE -->
+
+    <owl:NamedIndividual rdf:about="http://www.vemis.sn/6c/ontologies/2018/11/users#DEMBELE">
+        <rdf:type rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#Nom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vemis.sn/6c/ontologies/2018/11/users#Gaoussou -->
+
+    <owl:NamedIndividual rdf:about="http://www.vemis.sn/6c/ontologies/2018/11/users#Gaoussou">
+        <rdf:type rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#Prenom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vemis.sn/6c/ontologies/2018/11/users#Jean_Marie -->
+
+    <owl:NamedIndividual rdf:about="http://www.vemis.sn/6c/ontologies/2018/11/users#Jean_Marie">
+        <rdf:type rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#Prenom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vemis.sn/6c/ontologies/2018/11/users#Papa_Alioune -->
+
+    <owl:NamedIndividual rdf:about="http://www.vemis.sn/6c/ontologies/2018/11/users#Papa_Alioune">
+        <rdf:type rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#Prenom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vemis.sn/6c/ontologies/2018/11/users#camara -->
+
+    <owl:NamedIndividual rdf:about="http://www.vemis.sn/6c/ontologies/2018/11/users#camara">
+        <rdf:type rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#MotDePass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vemis.sn/6c/ontologies/2018/11/users#cisse -->
+
+    <owl:NamedIndividual rdf:about="http://www.vemis.sn/6c/ontologies/2018/11/users#cisse">
+        <rdf:type rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#MotDePass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vemis.sn/6c/ontologies/2018/11/users#dembele -->
+
+    <owl:NamedIndividual rdf:about="http://www.vemis.sn/6c/ontologies/2018/11/users#dembele">
+        <rdf:type rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#MotDePass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vemis.sn/6c/ontologies/2018/11/users#gaoussou -->
+
+    <owl:NamedIndividual rdf:about="http://www.vemis.sn/6c/ontologies/2018/11/users#gaoussou">
+        <rdf:type rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#Login"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vemis.sn/6c/ontologies/2018/11/users#jeanmarie -->
+
+    <owl:NamedIndividual rdf:about="http://www.vemis.sn/6c/ontologies/2018/11/users#jeanmarie">
+        <rdf:type rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#Login"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vemis.sn/6c/ontologies/2018/11/users#papaalioune -->
+
+    <owl:NamedIndividual rdf:about="http://www.vemis.sn/6c/ontologies/2018/11/users#papaalioune">
+        <rdf:type rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#Login"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vemis.sn/6c/ontologies/2018/11/users#001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.vemis.sn/6c/ontologies/2018/11/users#001">
+        <rdf:type rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#Utilisateur"/>
+        <users:aPourLogin rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#papaalioune"/>
+        <users:aPourMotDePass rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#cisse"/>
+        <users:aPourNom rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#CISSE"/>
+        <users:aPourPrenom rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#Papa_Alioune"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vemis.sn/6c/ontologies/2018/11/users#002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.vemis.sn/6c/ontologies/2018/11/users#002">
+        <rdf:type rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#Utilisateur"/>
+        <users:aPourLogin rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#gaoussou"/>
+        <users:aPourMotDePass rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#camara"/>
+        <users:aPourNom rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#CAMARA"/>
+        <users:aPourPrenom rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#Gaoussou"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vemis.sn/6c/ontologies/2018/11/users#003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.vemis.sn/6c/ontologies/2018/11/users#003">
+        <rdf:type rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#Utilisateur"/>
+        <users:aPourLogin rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#jeanmarie"/>
+        <users:aPourMotDePass rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#dembele"/>
+        <users:aPourNom rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#DEMBELE"/>
+        <users:aPourPrenom rdf:resource="http://www.vemis.sn/6c/ontologies/2018/11/users#Jean_Marie"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
